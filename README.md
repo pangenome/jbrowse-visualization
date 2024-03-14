@@ -13,7 +13,7 @@ Workflow to visualize pggb graphs in jbrowse
 
 
 1. build graph with `pggb`
-2 `cargo install maf2bed`
+2. Do a `cargo install maf2bed`
 3. `wgatools pafpseudo -f <FASTA_FILE> -g <TARGET> -o <OUTPUT.maf> <INPUT.paf>`
    - `FASTA_FILE` is the file with all the sequenced from which the
      pggb graph was built
