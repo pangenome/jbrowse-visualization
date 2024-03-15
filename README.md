@@ -86,7 +86,6 @@ You can now add additional tracks for your reference assembly, facilitating a co
 The visualization process culminates in an interactive pangenome view, akin to this example:
 
 ![Initial pangenome view](pg1.png)
-```
 
 # Synteny View Visualization
 
