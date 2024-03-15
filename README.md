@@ -116,34 +116,30 @@ This step-by-step approach simplifies the visualization of genomic synteny, enab
 
 
 
-## Todo
+## Future Directions and Enhancements
 
-There are several limitations, and tools like
-[Waragraph](https://github.com/chfi/waragraph) are better suited for
-interactive visualization of genome structure, but not necessarily of
-function.
+The current workflow, while effective for visualizing pangenome graphs, has its limitations. Tools like [Waragraph](https://github.com/chfi/waragraph) excel in interactive genome structure visualization but may fall short in highlighting genomic functions. This section outlines potential enhancements and considerations for future development.
 
-### Linear view
+### Linear View Enhancements
 
-Waragraph and `odgi layout` provides 1D visualizations that look like
-this:
+While Waragraph and `odgi layout` offer compelling one-dimensional (1D) visualizations akin to:
+
 ![Waragraph plot](pg4.png "Waragraph plot")
 
-The main issue with this visualization is that it's hard to project
-functional information on functional information would relate mainly
-to a single track. The MAFViewer mainly replaces this
-functionality.
-It would be nice to have:
-- ability to add copy numbers as colors
-- easily switch between the references
-- add features to all the assemblies in the pangenome; for JBrowse,
-  they need to be put in a merged gff3
-- visualize the [PanGene](https://github.com/lh3/pangene) annotations
-  of GFA like in ![Pangene](p5.png)
-  - for this, it would be great to write a GFA Adapter for JBrowse to
-    directly interact with the GFA (or a derived format)
-  - we can then visualize the paths corresponding to the genes or
-    other functional features directly
-- 2D view of genomes as from Waragraph: ![2D View](pg5.png)
-  - but how to relate this view to the rest of the information in
-    JBrowse is still an open question
+These visualizations often struggle to incorporate functional genomic information, which is typically relevant to individual tracks. MAFViewer addresses some of these concerns but further improvements could include:
+
+- **Color-coded Copy Numbers**: Enhancing visual differentiation through color-coding based on copy number variations.
+- **Reference Switching**: Streamlining the process to switch between different reference genomes.
+- **Comprehensive Feature Addition**: Facilitating the addition of genomic features across all assemblies within a pangenome, requiring a unified approach like merging GFF3 files in JBrowse.
+- **PanGene Annotations**: Integrating [PanGene](https://github.com/lh3/pangene) annotations for GFA visualization could provide insightful views on gene presence and variation within the pangenome. A potential improvement could involve developing a GFA Adapter for JBrowse to allow for direct interaction with GFA or derived formats, enabling visualization of gene paths or functional features:
+
+![Pangene view](p5.png)
+
+### Two-Dimensional (2D) Visualization
+
+Exploring 2D genome visualizations as offered by Waragraph presents an innovative way to examine genome structures:
+
+![2D View](pg5.png)
+
+However, integrating these visualizations into JBrowse, while maintaining a coherent relationship with existing data and features, poses a significant challenge and an exciting area for future exploration.
+
