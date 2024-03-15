@@ -127,7 +127,7 @@ function.
 
 Waragraph and `odgi layout` provides 1D visualizations that look like
 this:
-![alt text](pg4.png "Waragraph plot")
+![Waragraph plot](pg4.png "Waragraph plot")
 
 The main issue with this visualization is that it's hard to project
 functional information on functional information would relate mainly
