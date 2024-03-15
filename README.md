@@ -135,4 +135,15 @@ to a single track. The MAFViewer mainly replaces this
 functionality.
 It would be nice to have:
 - ability to add copy numbers as colors
-- 
+- easily switch between the references
+- add features to all the assemblies in the pangenome; for JBrowse,
+  they need to be put in a merged gff3
+- visualize the [PanGene](https://github.com/lh3/pangene) annotations
+  of GFA like in ![Pangene](p5.png)
+  - for this, it would be great to write a GFA Adapter for JBrowse to
+    directly interact with the GFA (or a derived format)
+  - we can then visualize the paths corresponding to the genes or
+    other functional features directly
+- 2D view of genomes as from Waragraph: ![2D View](pg5.png)
+  - but how to relate this view to the rest of the information in
+    JBrowse is still an open question
